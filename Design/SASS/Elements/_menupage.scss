@@ -1,0 +1,32 @@
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerlog{
+    padding: 15px;
+}
+  
+.rest{
+   
+    
+
+    &logoheader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+
+    &arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 32px;
+        width: 32px;
+    }
+    
+}
