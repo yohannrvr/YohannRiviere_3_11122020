@@ -1,0 +1,21 @@
+:root {
+    --Primary-Color: #9356DC;
+    --Secondary-Color: #cf69da;
+    --Tertiary-Color: #99E2D0;
+    --Tertiary-Color-Alt: #008766;
+    --Gradient-Color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    --Gradient-Color-Alt: linear-gradient(to top, #FF79DA, #9356DC);
+    
+  }
+  
+  body {
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+  }
+
+  img{
+    width: 50%;
+  }
