@@ -74,9 +74,9 @@ img {
     color: white;
     font-size: 18px;
     background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    box-shadow: 0px 5px 8px -3px black; }
+    box-shadow: 0px 5px 8px -5px black; }
     .explorationbutton:hover {
-      box-shadow: 0px 9px 13px 0px rgba(50, 50, 50, 0.77);
+      box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
       transition: ease-in-out 0.3s; }
   .explorationTitle {
     font-size: 24px; }
@@ -104,7 +104,7 @@ img {
     padding: 24px;
     list-style-type: none;
     background-color: #f6f6f6;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     border-radius: 25px;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125); }
   .hiworder {
@@ -124,7 +124,49 @@ img {
   .hiwtextstep {
     margin-left: 15px; }
   .hiwstep:hover {
-    box-shadow: 0px 9px 13px 0px rgba(50, 50, 50, 0.4);
+    box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.4);
     transition: ease-in-out 0.3s; }
+
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 24px 12px; }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  position: relative;
+  text-decoration: none; }
+
+.card {
+  box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.4);
+  margin-bottom: 10px;
+  border-radius: 12px; }
+  .cardnew {
+    background-color: var(--Tertiary-Color);
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 16px;
+    right: 12px; }
+  .cardimg {
+    height: 195px;
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    margin: 0; }
+  .cardfooter {
+    display: flex;
+    padding: 12px;
+    position: relative;
+    align-items: center;
+    border-bottom-left-radius: 12px; }
+  .cardbutton {
+    display: flex;
+    transition-duration: 0.25s;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten; }
 
 /*# sourceMappingURL=main.css.map */
