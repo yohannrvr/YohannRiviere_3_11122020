@@ -5,41 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil - ohmyfood!</title>
   <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="Design/CSS/default.css">
+  <link rel="stylesheet" href="Design/CSS/main.css">
 </head>
 <body>
+
+  <!-- <div class='loader loader--snake'></div> -->
+
+<div class="contentWrapper">
+
+  <div class="headerlogo"></div>
   <header class="header">
-    <img src="images/logo/ohmyfood.png" alt="notre Logo " class="header__logo">
+    
+    <img src="images/logo/ohmyfood@2x.svg" alt="notre Logo " class="header__logo">
   </header>
+  </div>
 
-  <main>
-    <section class="localisation">
-      <i class="fas fa-map-marker-alt localisation__icon">Paris, Belleville</i>
-    </section>
 
-    <section class="explo">
-        <h2 class="explo__title">Réservez le menu qui vous convient</h2>
-        <p class="explo__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <button class="explo__button">Explorer nos restaurants</button>
-    </section>
+  <section class="loc">
+    <div class="locWrapper">
+      <i class="fas fa-map-marker-alt  locicon"></i>
+      <input type="search" class="locWrapper--Bar" name="locaBar" placeholder="Paris, Belleville">
+    </div>
+  </section>
+
+  <section class="exploration">
+    <div class="explo">
+        <h2 class="explorationTitle">Réservez le menu qui vous convient</h2>
+        <h4 class="explorationSubTitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h4>
+        <button class="explorationbutton ">Explorer nos restaurants</button>
+    </div>
+  </section>
 
     <section class="hiw">
       <div class="container">
-        <h2 class="">Fonctionnement</h2>
-        <ol class="hiw__steps">
-          <li class="step1">
+        <h2 class="hiwTitle">Fonctionnement</h2>
+       
+        <ul class="hiwsteps">
+          <li class="hiwstep">
+            <span class="hiworder">1</span>
             <i class="fas fa-mobile-alt"></i>
-            <span class="text__step">Choisissez un restaurant</span>
+            <span class="hiwtextstep">Choisissez un restaurant</span>
           </li>
-          <li class="step2">
+          <li class="hiwstep">
+            <span class="hiworder">2</span>
             <i class="fas fa-list-ul"></i>
-            <span class="text__step">Composez votre menu</span>
+            <span class="hiwtextstep">Composez votre menu</span>
           </li>
-          <li class="step3">
+          <li class="hiwstep">
+            <span class="hiworder">3</span>
             <i class="fas fa-store"></i>
-            <span class="text__step">Déguster au restaurant</span>
+            <span class="hiwtextstep">Déguster au restaurant</span>
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
 
@@ -106,7 +123,7 @@
         </div>
       </div>
     </section>
-  </main> 
+  </aside> 
   <footer>
     <div class="container">
       <span class="logo__footer">Oh my food</span>
@@ -126,5 +143,6 @@
       </ul>
     </div>
   </footer>
+</div>
 </body>
 </html>
