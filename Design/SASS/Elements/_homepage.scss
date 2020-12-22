@@ -1,7 +1,6 @@
 .contentWrapper{
   display: flex;
   flex-direction: column; 
- 
 }
 
 
@@ -11,6 +10,7 @@
     position: relative;
     padding: 15px 0;
     justify-content: center;
+    box-shadow: 0 0 16 rgba(0,0,0,.25);
    
     
 
@@ -105,7 +105,8 @@
 
 .hiw{
   display: flex;
-  padding: 32px 16px;
+  flex-direction: column;
+  padding: 32px 45px;
   justify-content: center;
 
 
@@ -116,7 +117,8 @@
   
 
     &steps{
-      display: block;
+      display: flex;
+      flex-direction: column;
       padding: 0;
       margin: 0;
       cursor: pointer;
@@ -165,6 +167,7 @@
     &step:hover{
       box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.40);
       transition: ease-in-out 0.3s;
+      background-color: #f5edff;
     }
 
     
@@ -182,14 +185,20 @@
   border-radius: 12px;
   position: relative;
   text-decoration: none;
-  
+  scroll-behavior: smooth;
 
 }
+
+
 
 .card{
   box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.40);
   margin-bottom: 10px;
   border-radius: 12px;
+
+  &content{
+    width: 50%;
+  }
   
 
   &new{
@@ -197,9 +206,11 @@
     padding: 8px;
     border-radius: 2px;
     position: absolute;
-    top: 16px;
+    margin-top: 16px;
     right: 12px;
   }
+
+  
 
   &img{
   height: 195px;
@@ -211,7 +222,9 @@
   }
 
   &title{
-    margin: 0 0 4px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    width: 150%;
   }
 
   &subtitle{
@@ -220,24 +233,24 @@
   
   &footer{
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 12px;
     position: relative;
-    align-items: center;
-    border-bottom-left-radius: 12px;
+    align-items: center; 
+    box-sizing: content-box;
+     
   }
 
   &button{
     display: flex;
-    align-items: flex-end;
     position: relative;
-    padding: 0;
-    height: 32px;
-    width: 32px;
-    transition-duration: 0.25s;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 25px;
+    right: -40%;
     border: 0 solid transparent;
     background-color: transparent;
+    
     
   }
 

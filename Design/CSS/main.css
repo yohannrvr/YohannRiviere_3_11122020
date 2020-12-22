@@ -23,6 +23,10 @@ img {
   font-family: 'Shrikhand', sans-serif;
   margin: 0 0 16px; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 .contentWrapper {
   display: flex;
   flex-direction: column; }
@@ -31,7 +35,8 @@ img {
   display: flex;
   position: relative;
   padding: 15px 0;
-  justify-content: center; }
+  justify-content: center;
+  box-shadow: 0 0 16 rgba(0, 0, 0, 0.25); }
   .header img {
     width: auto; }
 
@@ -91,13 +96,15 @@ img {
 
 .hiw {
   display: flex;
-  padding: 32px 16px;
+  flex-direction: column;
+  padding: 32px 45px;
   justify-content: center; }
   .hiwTitle {
     font-size: 24px;
     margin-top: 0px; }
   .hiwsteps {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     cursor: pointer; }
@@ -130,7 +137,8 @@ img {
     margin-left: 15px; }
   .hiwstep:hover {
     box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.4);
-    transition: ease-in-out 0.3s; }
+    transition: ease-in-out 0.3s;
+    background-color: #f5edff; }
 
 .restaurant {
   background-color: #f6f6f6;
@@ -141,18 +149,21 @@ img {
   flex-direction: column;
   border-radius: 12px;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  scroll-behavior: smooth; }
 
 .card {
   box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.4);
   margin-bottom: 10px;
   border-radius: 12px; }
+  .cardcontent {
+    width: 50%; }
   .cardnew {
     background-color: var(--Tertiary-Color);
     padding: 8px;
     border-radius: 2px;
     position: absolute;
-    top: 16px;
+    margin-top: 16px;
     right: 12px; }
   .cardimg {
     height: 195px;
@@ -162,25 +173,25 @@ img {
     object-fit: cover;
     margin: 0; }
   .cardtitle {
-    margin: 0 0 4px; }
+    margin-bottom: 4px;
+    margin-top: 0px;
+    width: 150%; }
   .cardsubtitle {
     margin: 0; }
   .cardfooter {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 12px;
     position: relative;
     align-items: center;
-    border-bottom-left-radius: 12px; }
+    box-sizing: content-box; }
   .cardbutton {
     display: flex;
-    align-items: flex-end;
     position: relative;
-    padding: 0;
-    height: 32px;
-    width: 32px;
-    transition-duration: 0.25s;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 25px;
+    right: -40%;
     border: 0 solid transparent;
     background-color: transparent; }
   .cardbutton:hover {
@@ -216,11 +227,11 @@ img {
   .footericon {
     margin: 0px 10px 0px 10px; }
 
-.contentWrapper {
+.contentWrapperMenu {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: #eaeaea; }
+  background-color: #f6f6f6; }
 
 .header {
   display: flex;
@@ -261,11 +272,20 @@ img {
 
 .menuheader {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 39px;
   font-family: 'Shrikhand', sans-serif; }
-  .menuheadertitle {
-    align-items: flex-start; }
+
+.menubtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0 solid transparent;
+  background-color: transparent;
+  font-size: 32px;
+  font-weight: lighter; }
 
 .menutitle {
   font-family: 'Roboto', sans-serif;
@@ -282,33 +302,58 @@ img {
   display: flex;
   border-radius: 16px;
   background-color: white;
-  padding: 16px 16px 0px;
+  padding: 14px;
   margin-bottom: 16px;
   font-family: 'Roboto', sans-serif;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.35); }
   .menuItemtitle {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 4px; }
   .menuItemdesc {
     margin: 0;
-    font-size: 12px; }
+    font-size: 16px; }
   .menuItemprice {
-    padding: 16px;
-    align-self: flex-end; }
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    font-weight: 700;
+    justify-content: flex-end; }
 
-.buttoncommand {
-  border: 1px;
-  border-radius: 180px;
-  padding: 12px 24px;
-  font-weight: 500;
-  color: white;
-  font-size: 18px;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  box-shadow: 0px 5px 8px -5px black; }
-.buttonhover {
-  box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
-  transition: ease-in-out 0.3s;
-  cursor: pointer; }
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 84px;
+  margin-top: 50px; }
+  .buttoncommand {
+    border: 1px;
+    border-radius: 180px;
+    padding: 12px 24px;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    box-shadow: 0px 5px 8px -5px black; }
+  .buttonhover {
+    box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
+    transition: ease-in-out 0.3s;
+    cursor: pointer; }
+
+.menuItem {
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both; }
+
+@media (min-width: 768px) {
+  .hiwTitle {
+    text-align: center; }
+  .hiwsteps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .hiwstep {
+    margin-left: 32px; } }
 
 /*# sourceMappingURL=main.css.map */

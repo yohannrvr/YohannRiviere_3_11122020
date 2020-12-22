@@ -1,0 +1,31 @@
+@media(min-width: 768px){
+    .hiw{
+
+        &Title{
+            text-align: center;
+        }
+
+        &steps{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+        &step{
+            margin-left: 32px;
+        }
+    }
+
+    // .cards{
+    //     display: flex;
+    //     flex-direction: row;
+        
+    // }
+
+    // .card{
+    //     padding: 10px;
+    // }
+}
+
+
+
