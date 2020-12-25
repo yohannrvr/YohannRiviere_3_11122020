@@ -254,21 +254,23 @@ a {
     height: 40px;
     color: black; }
   .headerimg {
-    width: 100%; }
+    width: 100%;
+    height: 250px;
+    object-fit: cover; }
 
 .menucontainer {
   background-color: #eaeaea;
   padding: 16px;
   border-radius: 32px 32px 0 0;
-  margin-top: -35px;
-  position: relative; }
+  margin-top: -35px; }
 
 .menus {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  padding-top: 0; }
 
 .menuheader {
   display: flex;
@@ -276,6 +278,10 @@ a {
   justify-content: space-between;
   padding-right: 39px;
   font-family: 'Shrikhand', sans-serif; }
+  .menuheadertitle {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px; }
 
 .menubtn {
   display: flex;
@@ -290,7 +296,9 @@ a {
 .menutitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 40px;
+  margin-top: 0px; }
 .menutitle::after {
   display: block;
   content: "";
@@ -306,7 +314,14 @@ a {
   margin-bottom: 16px;
   font-family: 'Roboto', sans-serif;
   box-sizing: inherit;
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.35); }
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.35);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%; }
   .menuItemtitle {
     margin: 0;
     font-size: 16px;
@@ -320,6 +335,30 @@ a {
     align-items: flex-end;
     font-weight: 700;
     justify-content: flex-end; }
+  .menuItemcheck {
+    background-color: var(--Tertiary-Color);
+    margin: -1rem -5rem -1rem 1rem;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    border-radius: 0 10px 10px 0; }
+  .menuItem:hover .menuItemcheck {
+    margin-right: -1rem; }
+  .menuItemiconicon {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    color: var(--Tertiary-Color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 0.5s; }
+  .menuItem:hover .menuItemiconicon {
+    transform: rotate(0); }
 
 .button {
   display: flex;
@@ -341,11 +380,28 @@ a {
     transition: ease-in-out 0.3s;
     cursor: pointer; }
 
-.menuItem {
-  animation: itemAppear .6s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both; }
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite; }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    opacity: 0;
+    z-index: -10;
+    transform: rotate(360deg); } }
+@keyframes itemAppear {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 @media (min-width: 768px) {
   .hiwTitle {
     text-align: center; }
@@ -354,6 +410,12 @@ a {
     flex-direction: row;
     justify-content: center; }
   .hiwstep {
-    margin-left: 32px; } }
+    margin-left: 32px; }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=main.css.map */
