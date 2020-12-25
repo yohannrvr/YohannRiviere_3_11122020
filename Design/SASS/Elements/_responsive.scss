@@ -16,11 +16,14 @@
         }
     }
 
-    // .cards{
-    //     display: flex;
-    //     flex-direction: row;
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         
-    // }
+        
+    }
 
     // .card{
     //     padding: 10px;
