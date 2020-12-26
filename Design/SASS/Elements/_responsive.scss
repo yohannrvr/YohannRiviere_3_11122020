@@ -17,17 +17,25 @@
     }
 
     .cards{
-        display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        
-        
     }
 
-    // .card{
-    //     padding: 10px;
-    // }
+    .card{
+        width: 45%;
+        margin: 5px;
+
+        &new{
+            right: 120px;
+        }
+
+        &new1{
+            right: 970px;
+        }
+
+    }
 }
 
 

@@ -1,207 +1,215 @@
-.contentWrapper{
+.contentWrapper {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 
 
-.header{
-    display: flex;
-    position: relative;
-    padding: 15px 0;
-    justify-content: center;
-    box-shadow: 0 0 16 rgba(0,0,0,.25);
-   
-    
+.header {
+  display: flex;
+  position: relative;
+  padding: 15px 0;
+  justify-content: center;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
 
-    img {
-      width: auto;
-      }
-  
+  img {
+    width: auto;
+  }
+
 }
 
 
 
 .loc {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  background-color: #eaeaea;
+  padding: 10px;
+  overflow: hidden;
+  color: #353535;
+
+  &Wrapper {
     display: flex;
+    width: fit-content;
     justify-content: center;
-    font-size: 1.7rem;
-    background-color: #eaeaea;
-    padding: 10px;
-    overflow: hidden;
-    color: #353535;
-  
-    &Wrapper {
-      display: flex;
-      width: fit-content;
-      justify-content: center;
-      padding: 1rem 0;
-    
-  
-      &--Bar {
-        background-color: inherit;
-        border: none;
-        padding-left: 1.5rem;
-        max-width: max-content;
-        align-items: center;
-  
-        &::placeholder {
-          font-size: 16px;
-          font-weight: 600;
-          opacity: 1;
-        }
+    padding: 1rem 0;
+
+
+    &--Bar {
+      background-color: inherit;
+      border: none;
+      padding-left: 1.5rem;
+      max-width: max-content;
+      align-items: center;
+
+      &::placeholder {
+        font-size: 16px;
+        font-weight: 600;
+        opacity: 1;
       }
     }
-  
-      i {
-        background-color: inherit;
-        text-align: end;
-      }
-      
-      &icon{
-        font-size: 85%;
-      }
-    
   }
 
-.exploration{
+  i {
+    background-color: inherit;
+    text-align: end;
+  }
+
+  &icon {
+    font-size: 85%;
+  }
+
+}
+
+.exploration {
   display: flex;
   justify-content: space-around;
   text-align: center;
   background-color: #f6f6f6;
   padding: 25px;
   font-size: 20px;
-    
-    
-   &button{
+
+
+  &button {
     border: 1px;
     border-radius: 180px;
     padding: 12px 24px;
     font-weight: 500;
     color: white;
     font-size: 18px;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
     box-shadow: 0px 5px 8px -5px black;
-    
 
-    &:hover{
+
+    &:hover {
       box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
       transition: ease-in-out 0.3s;
     }
-   }
-
-   &Title{
-    font-size: 24px;
-   }
-
-   &SubTitle{
-    font-size: 16px;
-    font-weight: normal;
-   }
   }
 
+  &Title {
+    font-size: 24px;
+  }
+
+  &SubTitle {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
 
 
 
-.hiw{
+
+.hiw {
   display: flex;
   flex-direction: column;
   padding: 32px 45px;
   justify-content: center;
 
 
-    &Title{
-      font-size: 24px;
-      margin-top: 0px;
-    } 
-  
-
-    &steps{
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      margin: 0;
-      cursor: pointer;
-      
-    }
-
-    
-
-    &step{
-      display: flex;
-      position: relative;
-      justify-content: center;
-      align-items: center;
-      padding: 24px;
-      list-style-type: none;
-      background-color: #f6f6f6;
-      margin-bottom: 20px;
-      border-radius: 25px;
-      box-shadow: .25rem 0.25rem 0.5rem rgba(0,0,0,.125)
-      
-    }
-
-    
-
-    &order{
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      left: -12px;
-      width: 25px;
-      height: 25px;
-      color: white;
-      font-size: 16px;
-      border: 1px solid var(--Primary-Color);
-      background-color: var(--Primary-Color);
-      border-radius: 50%;
-      margin-right: 25px;
-      line-height: 25px;
-    }
-
-    &textstep{
-      margin-left: 15px;
-    }
+  &Title {
+    font-size: 24px;
+    margin-top: 0px;
+  }
 
 
-    &step:hover{
-      box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.40);
-      transition: ease-in-out 0.3s;
-      background-color: #f5edff;
-    }
+  &steps {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
 
-    
+  }
+
+
+
+  &step {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    list-style-type: none;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: .25rem 0.25rem 0.5rem rgba(0, 0, 0, .125)
+  }
+
+
+
+  &order {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -12px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid var(--Primary-Color);
+    background-color: var(--Primary-Color);
+    border-radius: 50%;
+    margin-right: 25px;
+    line-height: 25px;
+  }
+
+  &textstep {
+    margin-left: 15px;
+  }
+
+
+  &step:hover {
+    box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.40);
+    transition: ease-in-out 0.3s;
+    background-color: #f5edff;
+  }
+
+
 }
 
 
-.restaurant{
+.restaurant {
+  display: flex;
+  flex-direction: column;
   background-color: #f6f6f6;
   padding: 24px 12px;
 }
 
-.cards{
+.cards {
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   position: relative;
   text-decoration: none;
   scroll-behavior: smooth;
-
 }
 
 
 
-.card{
+
+.card {
   box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.40);
   margin-bottom: 10px;
   border-radius: 12px;
+  cursor: pointer;
 
-  &content{
+  &:hover {
+    box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.60);
+    transition: ease-in-out 0.3s;
+  }
+
+  &content {
     width: 50%;
   }
-  
 
-  &new{
+
+  &new {
+    // display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     background-color: var(--Tertiary-Color);
     padding: 8px;
     border-radius: 2px;
@@ -210,70 +218,113 @@
     right: 12px;
   }
 
-  
-
-  &img{
-  height: 195px;
-  width: 100%;
-  border: 0 solid transparent;
-  border-radius: 12px 12px 0 0;
-  object-fit: cover; 
-  margin: 0;
+  &new1{
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: var(--Tertiary-Color);
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 16px;
+    right: 12px;
   }
 
-  &title{
+
+
+  &img {
+    height: 195px;
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  &title {
     margin-bottom: 4px;
     margin-top: 0px;
     width: 150%;
   }
 
-  &subtitle{
+  &subtitle {
     margin: 0;
   }
-  
-  &footer{
+
+  &footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 12px;
     position: relative;
-    align-items: center; 
+    align-items: center;
     box-sizing: content-box;
-     
+
   }
 
-  &button{
+  &button {
     display: flex;
     position: relative;
-    align-items: flex-end;
+    align-items: center;
     font-size: 25px;
     right: -40%;
     border: 0 solid transparent;
     background-color: transparent;
-    
-    
+    cursor: pointer;
   }
 
-  &button:hover{
-    background-color: var(--Secondary-Color);
+
+
+  &button_nobg {
+    display: flex;
+    position: absolute;
+    font-weight: 10;
+    right: -40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    right: -40%;
+    border: 0 solid transparent;
+    opacity: 1;
+    transition: .1s ease;
   }
 
-  
+  &button_nobg:hover {
+    opacity: 0;
+  }
+
+  &button_bg {
+    display: flex;
+    position: absolute;
+    right: -40px;
+    align-items: flex-end;
+    font-size: 25px;
+    right: -40%;
+    border: 0 solid transparent;
+    color: var(--Secondary-Color);
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  &button_bg:hover {
+    opacity: 1;
+  }
+
+
 }
 
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   padding: 16px;
   background-color: #353535;
   color: white;
 
-  &logo{
+  &logo {
     color: white;
   }
 
-  &list{
+  &list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -282,33 +333,33 @@
     margin: 0px;
   }
 
-  &linklist1{
+  &linklist1 {
     margin: 0px 10px 4px -1px;
   }
 
 
-  &linklist{
+  &linklist {
     margin: 4px;
   }
 
-  &link{
+  &link {
     text-decoration: none;
     color: white;
   }
 
-  &link1{
+  &link1 {
     text-decoration: none;
     color: white;
   }
 
-  &icon1{
+  &icon1 {
     margin: 0px 16px 0px 10px;
   }
 
-  &icon{
+  &icon {
     margin: 0px 10px 0px 10px;
   }
 
-  
+
 
 }
