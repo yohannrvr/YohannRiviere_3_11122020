@@ -9,19 +9,19 @@
     top: 0;
     background-color: hsla(0,0%,100%,.9);
     animation: loader .01s;
-    animation-delay: 4s;
+    animation-delay: 8s;
     animation-fill-mode: both;
 	z-index: 10000;
 	
-	// &_logo{
-	// 	// display: flex;
-	// 	padding-top: 250px;
-	// 	text-align: center;
-	// 	padding-left: 310px;
-	// 	width: 30%;
-	// 	// align-items: center;
-	// 	// justify-content: center;
-	// }
+	&_logo{
+		display: flex;
+		padding-top: 250px;
+		text-align: center;
+		padding-left: 310px;
+		width: 30%;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 $dot-color: #79C3CD;

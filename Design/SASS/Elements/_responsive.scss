@@ -1,4 +1,4 @@
-@media(min-width: 768px){
+@media(min-width: 1110px){
     .hiw{
 
         &Title{
@@ -27,16 +27,98 @@
         width: 45%;
         margin: 5px;
 
-        &new{
-            right: 120px;
-        }
-
-        &new1{
-            right: 970px;
-        }
-
+       
     }
+
+    .menucontainer{
+        display: flex;
+        flex-direction: column;
+        // width: 50%;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .menu_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    .menu{
+        padding: 10px;
+
+        // &Itemdesc{
+        //     object-fit: cover;
+        // }
+    }
+
+    
+
+
+
+    // .menuItem{
+    //    width: 400px;
+    // }
 }
 
+@media(min-width: 768px){
 
+    .hiw{
+
+        &Title{
+            text-align: center;
+        }
+
+        &steps{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+        &step{
+            margin-left: 32px;
+        }
+    }
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 45%;
+        margin: 5px;
+
+        
+    }
+
+    .menucontainer{
+        display: flex;
+        flex-direction: column;
+        // width: 50%;
+        // max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .menu_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .menu{
+        padding: 10px;
+        
+    }
+
+}
 

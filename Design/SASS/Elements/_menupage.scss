@@ -56,14 +56,14 @@
 
 }
 
-.menus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #eaeaea;
-    padding-top: 0;
-}
+// .menus {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//     background-color: #eaeaea;
+//     padding-top: 0;
+// }
 
 .menuheader {
     display: flex;
@@ -82,19 +82,57 @@
 
 
 .menubtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: absolute;
+    padding: 0;
+    border: 0 solid transparent;
+    background-color: transparent;
+
+    &_nohover{
 
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
     padding: 0;
     border: 0 solid transparent;
     background-color: transparent;
     font-size: 32px;
     font-weight: lighter;
+    }
+
+    &_nohover:hover{
+        opacity: 0;
+    }
+
+    &_hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0;
+    border: 0 solid transparent;
+    background-color: transparent;
+    font-size: 32px;
+    opacity: 0;
+    color: var(--Secondary-Color);
+    transition: ease 0.5s;
+    }
+
+    &_hover:hover{
+        opacity: 1;
+    }
 }
 
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    
+    
+
     &title {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -109,8 +147,8 @@
         background: var(--Tertiary-Color);
         width: 40px;
         height: 4px;
-
     }
+
 }
 
 .menuItem {
@@ -129,17 +167,34 @@
     animation-fill-mode: both;
     transform: scale(0);
     max-width: 100%;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
 
 
+
+    &Wrap:hover{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        // width: 180px;
+    }
+
+    
 
     &title {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0;
         font-size: 16px;
         margin-bottom: 4px;
+        
 
     }
 
     &desc {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0;
         font-size: 16px;
     }
@@ -151,6 +206,7 @@
         align-items: flex-end;
         font-weight: 700;
         justify-content: flex-end;
+        margin-left: 10px;
     }
 
     &check {
@@ -162,6 +218,7 @@
         justify-content: center;
         transition-duration: 0.5s;
         border-radius: 0 10px 10px 0;
+        
     }
 
     &:hover &check {
