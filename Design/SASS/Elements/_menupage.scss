@@ -85,10 +85,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // position: absolute;
     padding: 0;
     border: 0 solid transparent;
     background-color: transparent;
+    cursor: pointer;
 
     &_nohover{
 
@@ -167,18 +167,16 @@
     animation-fill-mode: both;
     transform: scale(0);
     max-width: 100%;
-    // overflow: hidden;
-    // white-space: nowrap;
-    // text-overflow: ellipsis;
+    
 
 
 
-    &Wrap:hover{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        // width: 180px;
-    }
+    // &Wrap:hover{
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    //     text-overflow: ellipsis;
+    //     width: 50px;
+    // }
 
     
 
@@ -199,6 +197,14 @@
         font-size: 16px;
     }
 
+    // &desc:hover{
+    //     flex-wrap: nowrap;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    //     text-overflow: ellipsis;
+    //     width: 1000px;
+    // }
+
 
     &price {
         display: flex;
@@ -206,7 +212,8 @@
         align-items: flex-end;
         font-weight: 700;
         justify-content: flex-end;
-        margin-left: 10px;
+        // margin-left: 10px;
+        
     }
 
     &check {
@@ -272,4 +279,44 @@
         transition: ease-in-out 0.3s;
         cursor: pointer;
     }
+}
+
+.delay{
+    animation-name: menuDelay;
+}
+
+.a0{
+    animation-duration: 3s;
+}
+
+.a1{
+    animation-duration: 3.5s;
+}
+
+.a2{
+    animation-duration: 4s;
+}
+
+.a3{
+    animation-duration: 4.5s;
+}
+
+.a4{
+    animation-duration: 5s;
+}
+
+.a5{
+    animation-duration: 5.5s;
+}
+
+.a6{
+    animation-duration: 6s;
+}
+
+.a7{
+    animation-duration: 6.5s;
+}
+
+.a8{
+    animation-duration: 5.5s;
 }

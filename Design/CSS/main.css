@@ -206,6 +206,7 @@ a {
     display: flex;
     position: absolute;
     font-weight: 10;
+    font-weight: lighter;
     right: -40px;
     align-items: center;
     justify-content: center;
@@ -315,7 +316,8 @@ a {
   justify-content: center;
   padding: 0;
   border: 0 solid transparent;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
   .menubtn_nohover {
     display: flex;
     align-items: center;
@@ -375,10 +377,6 @@ a {
   animation-fill-mode: both;
   transform: scale(0);
   max-width: 100%; }
-  .menuItemWrap:hover {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
   .menuItemtitle {
     display: flex;
     flex-wrap: wrap;
@@ -395,8 +393,7 @@ a {
     flex: 1;
     align-items: flex-end;
     font-weight: 700;
-    justify-content: flex-end;
-    margin-left: 10px; }
+    justify-content: flex-end; }
   .menuItemcheck {
     background-color: var(--Tertiary-Color);
     margin: -1rem -5rem -1rem 1rem;
@@ -442,11 +439,48 @@ a {
     transition: ease-in-out 0.3s;
     cursor: pointer; }
 
+.delay {
+  animation-name: menuDelay; }
+
+.a0 {
+  animation-duration: 3s; }
+
+.a1 {
+  animation-duration: 3.5s; }
+
+.a2 {
+  animation-duration: 4s; }
+
+.a3 {
+  animation-duration: 4.5s; }
+
+.a4 {
+  animation-duration: 5s; }
+
+.a5 {
+  animation-duration: 5.5s; }
+
+.a6 {
+  animation-duration: 6s; }
+
+.a7 {
+  animation-duration: 6.5s; }
+
+.a8 {
+  animation-duration: 5.5s; }
+
 @keyframes itemAppear {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
+@keyframes menuDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(32px); }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
 .loader {
   display: flex;
   align-items: center;
@@ -458,7 +492,7 @@ a {
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   animation: loader .01s;
-  animation-delay: 8s;
+  animation-delay: 3s;
   animation-fill-mode: both;
   z-index: 10000; }
   .loader_logo {
@@ -605,7 +639,7 @@ body {
 
   .menu {
     padding: 10px; } }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hiwTitle {
     text-align: center; }
   .hiwsteps {
