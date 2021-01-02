@@ -168,6 +168,7 @@ a {
     width: 50%; }
   .cardnew {
     background-color: var(--Tertiary-Color);
+    color: #139273;
     padding: 8px;
     border-radius: 2px;
     position: absolute;
