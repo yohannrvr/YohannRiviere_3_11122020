@@ -446,31 +446,31 @@ a {
   animation-name: menuDelay; }
 
 .a0 {
-  animation-duration: 3s; }
+  animation-duration: 2s; }
 
 .a1 {
-  animation-duration: 3.5s; }
+  animation-duration: 2.5s; }
 
 .a2 {
-  animation-duration: 4s; }
+  animation-duration: 3s; }
 
 .a3 {
-  animation-duration: 4.5s; }
+  animation-duration: 3.5s; }
 
 .a4 {
-  animation-duration: 5s; }
+  animation-duration: 4s; }
 
 .a5 {
-  animation-duration: 5.5s; }
+  animation-duration: 4.5s; }
 
 .a6 {
-  animation-duration: 6s; }
+  animation-duration: 5s; }
 
 .a7 {
-  animation-duration: 6.5s; }
+  animation-duration: 5.5s; }
 
 .a8 {
-  animation-duration: 5.5s; }
+  animation-duration: 6s; }
 
 @keyframes itemAppear {
   0% {
