@@ -3,8 +3,6 @@
     flex-direction: column;
     margin: 0;
     background-color: #f6f6f6;
-
-
 }
 
 
@@ -51,19 +49,9 @@
     padding: 16px;
     border-radius: 32px 32px 0 0;
     margin-top: -35px;
-
-
-
 }
 
-// .menus {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: flex-start;
-//     background-color: #eaeaea;
-//     padding-top: 0;
-// }
+
 
 .menuheader {
     display: flex;
@@ -100,7 +88,7 @@
     border: 0 solid transparent;
     background-color: transparent;
     font-size: 32px;
-    font-weight: lighter;
+    font-weight: 1;
     }
 
     &_nohover:hover{
@@ -260,6 +248,7 @@
     justify-content: center;
     margin-bottom: 84px;
     margin-top: 50px;
+    
 
 
     &command {
@@ -272,12 +261,13 @@
         font-size: 18px;
         background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
         box-shadow: 0px 5px 8px -5px black;
+        cursor: pointer;
     }
 
     &command:hover {
         box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
         transition: ease-in-out 0.3s;
-        cursor: pointer;
+        opacity: 0.8;
     }
 }
 

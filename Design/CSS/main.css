@@ -84,10 +84,12 @@ a {
     color: white;
     font-size: 18px;
     background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    box-shadow: 0px 5px 8px -5px black; }
+    box-shadow: 0px 5px 8px -5px black;
+    cursor: pointer; }
     .explorationbutton:hover {
       box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
-      transition: ease-in-out 0.3s; }
+      transition: ease-in-out 0.5s;
+      opacity: 0.80; }
   .explorationTitle {
     font-size: 24px; }
   .explorationSubTitle {
@@ -137,8 +139,7 @@ a {
     margin-left: 15px; }
   .hiwstep:hover {
     box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.4);
-    transition: ease-in-out 0.3s;
-    background-color: #f5edff; }
+    transition: ease-in-out 0.3s; }
 
 .restaurant {
   display: flex;
@@ -327,7 +328,7 @@ a {
     border: 0 solid transparent;
     background-color: transparent;
     font-size: 32px;
-    font-weight: lighter; }
+    font-weight: 1; }
   .menubtn_nohover:hover {
     opacity: 0; }
   .menubtn_hover {
@@ -433,11 +434,12 @@ a {
     color: white;
     font-size: 18px;
     background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    box-shadow: 0px 5px 8px -5px black; }
+    box-shadow: 0px 5px 8px -5px black;
+    cursor: pointer; }
   .buttoncommand:hover {
     box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.6);
     transition: ease-in-out 0.3s;
-    cursor: pointer; }
+    opacity: 0.8; }
 
 .delay {
   animation-name: menuDelay; }
@@ -481,6 +483,10 @@ a {
   100% {
     transform: translateY(0);
     opacity: 1; } }
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10; } }
 .loader {
   display: flex;
   align-items: center;
@@ -601,10 +607,6 @@ body {
       background-color: #9356DC;
       animation: dot-move 3s 2.25s ease infinite; }
 
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10; } }
 @media (min-width: 1110px) {
   .hiwTitle {
     text-align: center; }
@@ -672,6 +674,29 @@ body {
     justify-content: center; }
 
   .menu {
-    padding: 10px; } }
+    padding: 10px; }
+
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: loader .01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    z-index: 10000; }
+    .loader_logo {
+      display: flex;
+      padding-top: 250px;
+      text-align: center;
+      padding-left: 310px;
+      width: 30%;
+      align-items: center;
+      justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
