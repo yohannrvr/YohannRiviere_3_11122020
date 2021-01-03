@@ -121,8 +121,6 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    cursor: pointer;
-
   }
 
 
@@ -133,6 +131,7 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
+    cursor: pointer;
     list-style-type: none;
     background-color: #f6f6f6;
     margin-bottom: 20px;
