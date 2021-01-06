@@ -258,7 +258,7 @@
     position: relative;
     align-items: center;
     font-size: 25px;
-    right: -40%;
+    right: -47%;
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
@@ -283,6 +283,7 @@
 
   &button_nobg:hover {
     opacity: 0;
+    font-weight: lighter;
   }
 
   &button_bg {
