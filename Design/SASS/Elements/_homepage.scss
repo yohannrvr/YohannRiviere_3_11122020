@@ -20,7 +20,7 @@
 
 
 
-.loc {
+.localisation {
   display: flex;
   justify-content: center;
   font-size: 1.7rem;
@@ -269,7 +269,6 @@
   &button_nobg {
     display: flex;
     position: absolute;
-    font-weight: 10;
     font-weight: lighter;
     right: -40px;
     align-items: center;
