@@ -386,13 +386,19 @@ a {
     text-overflow: ellipsis;
     width: 200px;
     transition-delay: 5s; }
+  .menuItem:hover .menuItemtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    transition-delay: 5s; }
   .menuItemtitle {
     margin: 0;
     font-size: 16px;
     margin-bottom: 4px; }
   .menuItemdesc {
     margin: 0;
-    font-size: 16px; }
+    font-size: 15px; }
   .menuItemprice {
     display: flex;
     flex: 1;

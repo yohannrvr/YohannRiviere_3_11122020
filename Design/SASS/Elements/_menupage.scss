@@ -164,6 +164,14 @@
         width: 200px;
         transition-delay: 5s;
     }
+
+    &:hover &title{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 200px;
+        transition-delay: 5s;
+    }
     
 
 
@@ -177,7 +185,7 @@
 
     &desc {
         margin: 0;
-        font-size: 16px;
+        font-size: 15px;
     }
 
 
