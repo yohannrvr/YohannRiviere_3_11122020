@@ -27,7 +27,7 @@ a {
   text-decoration: none;
   color: black; }
 
-.far {
+.far:hover {
   color: transparent; }
 
 .contentWrapper {
@@ -206,7 +206,8 @@ a {
     right: -47%;
     border: 0 solid transparent;
     background-color: transparent;
-    cursor: pointer; }
+    cursor: pointer;
+    font-weight: 100; }
   .cardbutton_nobg {
     display: flex;
     position: absolute;
@@ -331,7 +332,8 @@ a {
     padding: 0;
     border: 0 solid transparent;
     background-color: transparent;
-    font-size: 32px; }
+    font-size: 32px;
+    font-weight: 100; }
   .menubtn_nohover:hover {
     opacity: 0; }
   .menubtn_hover {

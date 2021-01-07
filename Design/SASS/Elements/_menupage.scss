@@ -77,6 +77,7 @@
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
+    
 
     &_nohover{
 
@@ -88,7 +89,7 @@
     border: 0 solid transparent;
     background-color: transparent;
     font-size: 32px;
-    // font-weight: 1;
+    font-weight: 100;
     }
 
     &_nohover:hover{
