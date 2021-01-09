@@ -159,13 +159,13 @@
     max-width: 100%;
     
 
-    &:hover &desc {
+     &:hover &desc {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 200px;
-        transition-delay: 5s;
-    }
+        width: 190px;
+    //     transition-delay: 5s;
+     }
 
     &:hover &title{
         overflow: hidden;

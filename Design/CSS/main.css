@@ -119,6 +119,7 @@ a {
     align-items: center;
     padding: 24px;
     cursor: pointer;
+    font-weight: 500;
     list-style-type: none;
     background-color: #f6f6f6;
     margin-bottom: 20px;
@@ -142,7 +143,8 @@ a {
     margin-left: 15px; }
   .hiwstep:hover {
     box-shadow: 0px 9px 13px -2px rgba(50, 50, 50, 0.4);
-    transition: ease-in-out 0.3s; }
+    transition: ease-in-out 0.3s;
+    background-color: #f5edff; }
 
 .restaurant {
   display: flex;
@@ -387,8 +389,7 @@ a {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 200px;
-    transition-delay: 5s; }
+    width: 190px; }
   .menuItem:hover .menuItemtitle {
     overflow: hidden;
     white-space: nowrap;
@@ -713,5 +714,13 @@ body {
       width: 30%;
       align-items: center;
       justify-content: center; } }
+@media (min-width: 2440px) {
+  .restaurant {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    border-radius: 10px 10px 0 0;
+    padding: 25px; } }
 
 /*# sourceMappingURL=main.css.map */
